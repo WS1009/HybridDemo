@@ -14,6 +14,9 @@ import org.devio.`as`.proj.common.BuildConfig
 
 //ReactNative混合开发指导文档：https://www.devio.org/2020/04/19/React-Native-Hybrid-Android/
 
+//打本地 rn bundle包
+// react-native bundle --platform android --dev false --entry-file index.js --bundle-output ../asproj/app/src/main/assets/index.android.bundle --assets-dest ../asproj/app/src/main/res/
+
 @Route(path = "/rn/main")
 class HiRNActivity : AppCompatActivity() ,DefaultHardwareBackBtnHandler{
     private var mReactRootView: ReactRootView? = null
@@ -38,7 +41,7 @@ class HiRNActivity : AppCompatActivity() ,DefaultHardwareBackBtnHandler{
             .setInitialLifecycleState(LifecycleState.RESUMED)
             .build()
         // 这个"rn_module"名字一定要和我们在index.js中注册的名字保持一致AppRegistry.registerComponent()
-        mReactRootView?.startReactApplication(mReactInstanceManager, "rn_module", null)
+        mReactRootView?.startReactApplication(mReactInstanceManager, "demo_page")
     }
 
     override fun onPause() {
