@@ -9,6 +9,7 @@ import com.facebook.react.ReactRootView
 import com.facebook.react.common.LifecycleState
 import com.facebook.react.shell.MainReactPackage
 import org.devio.`as`.proj.common.BuildConfig
+import org.devio.`as`.proj.common.rn.view.HiRNImageViewPackage
 
 /**
  * RN优化提升加载速度，实现秒开RN模块
@@ -82,6 +83,7 @@ class HiRNCacheManager private constructor() {
             .setJSMainModulePath("index")
             .addPackage(MainReactPackage())
             .addPackage(HiReactPackage())
+            .addPackage(HiRNImageViewPackage())
             .setUseDeveloperSupport(BuildConfig.DEBUG)
             .setInitialLifecycleState(LifecycleState.RESUMED)
             .build()

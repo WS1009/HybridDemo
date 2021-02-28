@@ -2,6 +2,8 @@ import React from 'react'
 import {View, Text, Button, StyleSheet} from 'react-native'
 import HiRNBridge from '../lib/HiRNBridge'
 
+import HiRNImageView from '../lib/HiRNImageView'
+
 
 export default class RNBridgeDemo extends React.Component {
 
@@ -44,6 +46,14 @@ export default class RNBridgeDemo extends React.Component {
                 }}
             />
             <Text>获取的header：{JSON.stringify(headers)}</Text>
+
+            <HiRNImageView
+                style={{
+                    width: 200,
+                    height: 200
+                }}
+                src={'https://m.360buyimg.com/babel/jfs/t1/158210/3/5443/41202/6013b891Ecdf9fa43/6c2efaa3e1af72f5.png'}
+            />
         </View>;
     }
 }
