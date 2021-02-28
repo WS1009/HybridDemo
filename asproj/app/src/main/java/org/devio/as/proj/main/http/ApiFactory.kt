@@ -13,7 +13,7 @@ object ApiFactory {
 
     init {
         hiRestful.addInterceptor(BizInterceptor())
-        hiRestful.addInterceptor(HttpStatusInterceptor())
+//        hiRestful.addInterceptor(HttpStatusInterceptor())
 
         SPUtil.putBoolean(KEY_DEGRADE_HTTP,false)
     }
