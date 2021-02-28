@@ -2,7 +2,7 @@
  * @format
  */
 import React from 'react'
-import {Text, View, AppRegistry} from 'react-native';
+import {Text, View, AppRegistry,DeviceEventEmitter} from 'react-native';
 import App from './App';
 import {name as appName} from './app.json';
 import {DemoPage} from "./js/page/DemoPage";

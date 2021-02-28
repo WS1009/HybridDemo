@@ -1,15 +1,17 @@
 package org.devio.`as`.proj.common.rn
 
+import android.graphics.Color
 import android.os.Bundle
 import android.view.KeyEvent
 import androidx.appcompat.app.AppCompatActivity
 import com.alibaba.android.arouter.facade.annotation.Route
 import com.facebook.react.ReactInstanceManager
 import com.facebook.react.ReactRootView
-import com.facebook.react.common.LifecycleState
+import com.facebook.react.bridge.WritableMap
+import com.facebook.react.bridge.WritableNativeMap
 import com.facebook.react.modules.core.DefaultHardwareBackBtnHandler
-import com.facebook.react.shell.MainReactPackage
-import org.devio.`as`.proj.common.BuildConfig
+import com.facebook.react.modules.core.DeviceEventManagerModule
+import org.devio.hi.library.util.HiStatusBar
 
 
 //ReactNative混合开发指导文档：https://www.devio.org/2020/04/19/React-Native-Hybrid-Android/
@@ -24,30 +26,30 @@ class HiRNActivity : AppCompatActivity(), DefaultHardwareBackBtnHandler {
     private var mReactInstanceManager: ReactInstanceManager? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        //预加载后，RN对StatusBar调用失效
+        HiStatusBar.setStatusBar(this, true, statusBarColor = Color.TRANSPARENT, translucent = true)
         super.onCreate(savedInstanceState)
 
         initRN()
+        fireEvent()
         setContentView(mReactRootView)
+    }
+
+    private fun fireEvent() {
+        val event: WritableMap = WritableNativeMap()
+        event.putString("method", "onStart")
+//        mReactInstanceManager!!.currentReactContext?.getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter::class.java)
+//            ?.emit("HI_RN_EVENT",event)
+        mReactRootView?.fireEvent("HI_RN_EVENT", event)
     }
 
     private fun initRN() {
         val routeTo = intent.getStringExtra(HI_RN_BUNDLE)
         val params = Bundle()
         params.putString("routeTo", routeTo)
-
-        mReactRootView = ReactRootView(this)
-        mReactInstanceManager = ReactInstanceManager.builder()
-            .setApplication(application)
-            .setCurrentActivity(this)
-            .setBundleAssetName("index.android.bundle")
-            .setJSMainModulePath("index")
-            .addPackage(MainReactPackage())
-            .addPackage(HiReactPackage())
-            .setUseDeveloperSupport(BuildConfig.DEBUG)
-            .setInitialLifecycleState(LifecycleState.RESUMED)
-            .build()
-        // 这个"rn_module"名字一定要和我们在index.js中注册的名字保持一致AppRegistry.registerComponent()
-        mReactRootView?.startReactApplication(mReactInstanceManager, "rn_module", params)
+        mReactRootView =
+            HiRNCacheManager.instance?.getCachedReactRootView(this, HI_RN_BUNDLE, params)
+        mReactInstanceManager = mReactRootView!!.reactInstanceManager
     }
 
     override fun onPause() {
@@ -58,7 +60,9 @@ class HiRNActivity : AppCompatActivity(), DefaultHardwareBackBtnHandler {
     override fun onDestroy() {
         super.onDestroy()
         mReactInstanceManager?.onHostDestroy(this)
-        mReactRootView?.unmountReactApplication()
+
+        //为了提高下次打开的体验，不去detachRootView,防止第二次获取RN缓存时不出现白页
+        //mReactRootView?.unmountReactApplication()
     }
 
     override fun onBackPressed() {
@@ -88,7 +92,7 @@ class HiRNActivity : AppCompatActivity(), DefaultHardwareBackBtnHandler {
     }
 
     companion object {
-        const val HI_RN_BUNDLE = "HI_RN_BUNDLE"
+        const val HI_RN_BUNDLE = "rn_module"
     }
 
 }

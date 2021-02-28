@@ -10,6 +10,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 
+import org.devio.as.proj.common.rn.HiRNCacheManager;
 import org.devio.as.proj.common.ui.component.HiBaseActivity;
 import org.devio.as.proj.main.logic.MainActivityLogic;
 import org.devio.hi.library.util.HiStatusBar;
@@ -27,6 +28,14 @@ public class MainActivity extends HiBaseActivity implements MainActivityLogic.Ac
         activityLogic = new MainActivityLogic(this, savedInstanceState);
 
         HiStatusBar.INSTANCE.setStatusBar(this, true, Color.WHITE, false);
+
+        preLoadRN();
+    }
+
+    private void preLoadRN() {
+        Bundle bundle = new Bundle();
+        bundle.putString("routeTo", "/browsing");
+        HiRNCacheManager.getInstance().preLoad(this, HiRNCacheManager.MODULE_NAME, bundle);
     }
 
     @Override
