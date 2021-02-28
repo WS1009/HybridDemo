@@ -58,6 +58,8 @@ export default class RNBridgeDemo extends React.Component {
                     this.setState({
                         message: e
                     })
+
+                    alert("收到native的事件：" + e)
                 }}
             />
 
