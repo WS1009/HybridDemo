@@ -69,7 +69,6 @@ class Scheduler(
                 return response
             }
 
-
             fun dispatch() {
                 val interceptor = interceptors[callIndex]
                 val intercept = interceptor.intercept(this)

@@ -21,7 +21,6 @@ class BizInterceptor : HiInterceptor {
             val requestUrl: String = request.endPointUrl()
             outputBuilder.append("\n$requestUrl==>$httpMethod\n")
 
-
             if (request.headers != null) {
                 outputBuilder.append("【headers\n")
                 request.headers!!.forEach(action = {
