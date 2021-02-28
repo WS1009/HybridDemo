@@ -25,9 +25,9 @@ class HiRNImageViewManager : SimpleViewManager<HiRNImageView>() {
         //将native的事件名 onNativeClick 映射给js端 onJSClick
         return MapBuilder.builder<String, Any>().put(
             "onNativeClick", MapBuilder.of(
-                "phasedRegistrationNames",
+                "phasedRegistrationNames",//固定值
                 MapBuilder.of(
-                    "bubbled",
+                    "bubbled",//固定值
                     "onJSClick"
                 )
             )
