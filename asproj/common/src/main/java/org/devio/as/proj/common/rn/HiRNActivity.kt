@@ -37,11 +37,12 @@ class HiRNActivity : AppCompatActivity() ,DefaultHardwareBackBtnHandler{
             .setBundleAssetName("index.android.bundle")
             .setJSMainModulePath("index")
             .addPackage(MainReactPackage())
+            .addPackage(HiReactPackage())
             .setUseDeveloperSupport(BuildConfig.DEBUG)
             .setInitialLifecycleState(LifecycleState.RESUMED)
             .build()
         // 这个"rn_module"名字一定要和我们在index.js中注册的名字保持一致AppRegistry.registerComponent()
-        mReactRootView?.startReactApplication(mReactInstanceManager, "demo_page")
+        mReactRootView?.startReactApplication(mReactInstanceManager, "rn_module")
     }
 
     override fun onPause() {
