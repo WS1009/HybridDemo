@@ -35,7 +35,9 @@ public class MainActivity extends HiBaseActivity implements MainActivityLogic.Ac
     private void preLoadRN() {
         Bundle bundle = new Bundle();
         bundle.putString("routeTo", "/browsing");
-        HiRNCacheManager.getInstance().preLoad(this, HiRNCacheManager.MODULE_NAME, bundle);
+
+        //预知可能要打开历史浏览模块，就先预加载此模块
+        HiRNCacheManager.getInstance().preLoad(this, HiRNCacheManager.MODULE_NAME_BROWSING, bundle);
     }
 
     @Override

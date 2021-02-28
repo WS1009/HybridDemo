@@ -91,8 +91,17 @@ class HiRNCacheManager private constructor() {
 
     }
 
+    fun destroy(moduleName: String) {
+        val reactRootView = CACHE_VIEW[moduleName]
+        reactRootView?.apply {
+            reactRootView.unmountReactApplication()
+        }
+        CACHE_VIEW.remove(moduleName)
+    }
+
     companion object {
-        const val MODULE_NAME = "rn_module"
+        const val MODULE_NAME_BROWSING = "rn_module_browsing"
+        const val MODULE_NAME_BRIDGE_DEMO = "rn_module_bridgeDemo"
 
         @JvmStatic
         @get:Synchronized

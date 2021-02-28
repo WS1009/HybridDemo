@@ -18,6 +18,7 @@ import androidx.core.content.ContextCompat
 import com.alibaba.android.arouter.launcher.ARouter
 import kotlinx.android.synthetic.main.fragment_profile_page.*
 import org.devio.`as`.proj.common.rn.HiRNActivity
+import org.devio.`as`.proj.common.rn.HiRNCacheManager
 import org.devio.`as`.proj.common.ui.component.HiBaseFragment
 import org.devio.`as`.proj.common.ui.view.loadCircle
 import org.devio.`as`.proj.common.ui.view.loadCorner
@@ -46,17 +47,19 @@ class ProfileFragment : HiBaseFragment() {
         queryCourseNotice()
 
 
-        item_playground.setOnClickListener{
+        item_playground.setOnClickListener {
             ARouter.getInstance().build("/debug/playground").navigation()
         }
 
-        item_history.setOnClickListener{
+        item_history.setOnClickListener {
             goToBrowsing()
         }
     }
 
     private fun goToBrowsing() {
-        ARouter.getInstance().build("/rn/main").withString(HiRNActivity.HI_RN_BUNDLE,"/browsing").navigation()
+        ARouter.getInstance().build("/rn/main")
+            .withString(HiRNActivity.HI_RN_BUNDLE, HiRNCacheManager.MODULE_NAME_BROWSING)
+            .navigation()
     }
 
     private fun queryCourseNotice() {

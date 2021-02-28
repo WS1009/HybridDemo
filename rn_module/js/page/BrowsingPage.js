@@ -9,7 +9,7 @@ import {
     DeviceEventEmitter
 } from 'react-native';
 
-export class DemoPage extends React.Component {
+export class BrowsingPage extends React.Component {
     componentDidMount() {
         this.eventListener = DeviceEventEmitter.addListener("HI_RN_EVENT", (params) => {
             const {method} = params || {}

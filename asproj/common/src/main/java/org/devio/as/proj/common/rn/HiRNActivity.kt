@@ -48,7 +48,7 @@ class HiRNActivity : AppCompatActivity(), DefaultHardwareBackBtnHandler {
         val params = Bundle()
         params.putString("routeTo", routeTo)
         mReactRootView =
-            HiRNCacheManager.instance?.getCachedReactRootView(this, HI_RN_BUNDLE, params)
+            HiRNCacheManager.instance?.getCachedReactRootView(this, routeTo, params)
         mReactInstanceManager = mReactRootView!!.reactInstanceManager
     }
 
@@ -63,6 +63,8 @@ class HiRNActivity : AppCompatActivity(), DefaultHardwareBackBtnHandler {
 
         //为了提高下次打开的体验，不去detachRootView,防止第二次获取RN缓存时不出现白页
         //mReactRootView?.unmountReactApplication()
+
+//        HiRNCacheManager.instance?.destroy(HiRNCacheManager.MODULE_NAME)
     }
 
     override fun onBackPressed() {
