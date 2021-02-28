@@ -10,7 +10,8 @@ export default class RNBridgeDemo extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            headers: ''
+            headers: '',
+            message: ''
         }
     }
 
@@ -23,7 +24,7 @@ export default class RNBridgeDemo extends React.Component {
 
     render() {
 
-        const {headers} = this.state;
+        const {headers, message} = this.state;
         return <View>
             <Button
                 title={'onBack'}
@@ -53,7 +54,15 @@ export default class RNBridgeDemo extends React.Component {
                     height: 200
                 }}
                 src={'https://m.360buyimg.com/babel/jfs/t1/158210/3/5443/41202/6013b891Ecdf9fa43/6c2efaa3e1af72f5.png'}
+                onPress={e => {
+                    this.setState({
+                        message: e
+                    })
+                }}
             />
+
+            <Text>收到来自native UI 的数据 ：{message}</Text>
+
         </View>;
     }
 }

@@ -4,6 +4,10 @@ import android.content.Context
 import android.util.AttributeSet
 import androidx.appcompat.widget.AppCompatImageView
 import com.bumptech.glide.Glide
+import com.facebook.react.bridge.Arguments
+import com.facebook.react.bridge.ReactContext
+import com.facebook.react.bridge.WritableMap
+import com.facebook.react.uimanager.events.RCTEventEmitter
 
 class HiRNImageView @JvmOverloads constructor(
     context: Context,
@@ -13,6 +17,20 @@ class HiRNImageView @JvmOverloads constructor(
 
     fun setUrl(url: String) {
         Glide.with(this).load(url).into(this)
+
+        setOnClickListener {
+            fireEvent("OnClick Event")
+        }
     }
 
+    /**
+     * 向js层传递UI的事件通知
+     */
+    private fun fireEvent(message: String) {
+        val event: WritableMap = Arguments.createMap()
+        event.putString("message", message)
+        val reactContext = context as ReactContext
+        reactContext.getJSModule(RCTEventEmitter::class.java)
+            .receiveEvent(id, "onNativeClick", event)
+    }
 }
