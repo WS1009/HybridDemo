@@ -1,6 +1,6 @@
 import React from 'react'
 import {View, Text, Button, StyleSheet} from 'react-native'
-import HiRNBridge from './lib/HiRNBridge'
+import HiRNBridge from '../lib/HiRNBridge'
 
 
 export default class RNBridgeDemo extends React.Component {
