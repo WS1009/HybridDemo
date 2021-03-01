@@ -1,3 +1,4 @@
+include ':hi-concurrent'
 include ':hi_debugtool'
 include ':app'
 rootProject.name='ASProj'
