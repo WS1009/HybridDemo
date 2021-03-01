@@ -22,7 +22,7 @@ class HiAdapter(context: Context) : Adapter<ViewHolder>() {
     private val recyclerViewRef: WeakReference<RecyclerView>? = null
     private var mContext: Context = context
     private var mInflater = LayoutInflater.from(context)
-    private var dataSets = java.util.ArrayList<HiDataItem<*, out ViewHolder>>()
+    private var dataSets = ArrayList<HiDataItem<*, out ViewHolder>>()
     private var typeArrays = SparseArray<HiDataItem<*, out ViewHolder>>()
 
     private var headers = SparseArray<View>()
@@ -282,7 +282,7 @@ class HiAdapter(context: Context) : Adapter<ViewHolder>() {
         recyclerViewRef?.clear()
     }
 
-     open fun getAttachRecyclerView(): RecyclerView? {
+    open fun getAttachRecyclerView(): RecyclerView? {
         return recyclerViewRef?.get()
     }
 

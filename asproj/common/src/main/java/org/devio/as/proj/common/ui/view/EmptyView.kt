@@ -34,13 +34,10 @@ class EmptyView : LinearLayout {
 
         LayoutInflater.from(context).inflate(R.layout.layout_empty_view, this, true)
 
-
         icon = findViewById(R.id.empty_icon)
         title = findViewById(R.id.empty_title)
         desc = findViewById(R.id.empty_text)
         button = findViewById(R.id.empty_action)
-
-
     }
 
     /**
