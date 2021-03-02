@@ -111,6 +111,7 @@ object HiExecutor {
     }
 
 
+    @Synchronized
     fun pause() {
         lock.lock()
         try {
@@ -122,6 +123,7 @@ object HiExecutor {
         HiLog.e(TAG, "hiExecutor is paused")
     }
 
+    @Synchronized
     fun resume() {
         lock.lock()
         try {
