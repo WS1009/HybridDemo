@@ -10,5 +10,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         ConcurrentTest.main(this)
+
+        CoroutineScene.startScene1()
+
+        CoroutineScene.startScene2()
     }
 }
