@@ -13,6 +13,7 @@ import androidx.fragment.app.Fragment;
 import org.devio.as.proj.common.rn.HiRNCacheManager;
 import org.devio.as.proj.common.ui.component.HiBaseActivity;
 import org.devio.as.proj.main.logic.MainActivityLogic;
+import org.devio.hi.library.util.HiDataBus;
 import org.devio.hi.library.util.HiStatusBar;
 
 import java.lang.reflect.InvocationTargetException;
@@ -28,6 +29,8 @@ public class MainActivity extends HiBaseActivity implements MainActivityLogic.Ac
         activityLogic = new MainActivityLogic(this, savedInstanceState);
 
         HiStatusBar.INSTANCE.setStatusBar(this, true, Color.WHITE, false);
+
+        HiDataBus.INSTANCE.<String>with("stickyData").setStickData("stickyData from MainActivity");
 
         preLoadRN();
     }

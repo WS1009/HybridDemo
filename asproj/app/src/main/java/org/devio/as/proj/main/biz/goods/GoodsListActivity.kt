@@ -1,6 +1,7 @@
 package org.devio.`as`.proj.main.biz.goods
 
 import android.os.Bundle
+import androidx.lifecycle.Observer
 import com.alibaba.android.arouter.facade.annotation.Autowired
 import com.alibaba.android.arouter.facade.annotation.Route
 import com.alibaba.android.arouter.launcher.ARouter
@@ -8,6 +9,7 @@ import kotlinx.android.synthetic.main.activity_goods_list.*
 import org.devio.`as`.proj.common.ui.component.HiBaseActivity
 import org.devio.`as`.proj.main.R
 import org.devio.`as`.proj.main.route.HiRoute
+import org.devio.hi.library.util.HiDataBus
 import org.devio.hi.library.util.HiStatusBar
 
 @Route(path = "/goods/list")
@@ -30,7 +32,7 @@ class GoodsListActivity : HiBaseActivity() {
         HiStatusBar.setStatusBar(this, true, translucent = false)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_goods_list)
-       // ARouter.getInstance().inject(this)
+        // ARouter.getInstance().inject(this)
         HiRoute.inject(this)
 
         action_back.setOnClickListener { onBackPressed() }
@@ -45,5 +47,9 @@ class GoodsListActivity : HiBaseActivity() {
             ft.add(R.id.container, fragment, FRAGMENT_TAG)
         }
         ft.show(fragment).commitNowAllowingStateLoss()
+
+        HiDataBus.with<String>("stickyData").observerSticky(this, true, Observer {
+            showToast("data from dataBus:$it")
+        })
     }
 }
