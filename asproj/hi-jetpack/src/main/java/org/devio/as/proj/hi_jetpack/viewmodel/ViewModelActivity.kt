@@ -1,8 +1,9 @@
-package org.devio.`as`.proj.hi_jetpack
+package org.devio.`as`.proj.hi_jetpack.viewmodel
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.*
+import org.devio.`as`.proj.hi_jetpack.R
 
 class ViewModelActivity : AppCompatActivity() {
 
@@ -20,16 +21,16 @@ class ViewModelActivity : AppCompatActivity() {
 
 class HiViewModel(private val saveState: SavedStateHandle) : ViewModel() {
     private val KEY_HOME_PAGE_DATA = "key_home_page_data"
-    private val liveData = MutableLiveData<List<GoodsModel>>()
+    private val liveData = MutableLiveData<String>()
 
-    fun loadInitData(): LiveData<List<GoodsModel>> {
-        //1. from memory .
+    fun loadInitData(): LiveData<String> {
+        // 1. from memory .
         if (liveData.value == null) {
-            val memoryData = saveState.get<List<GoodsModel>>(KEY_HOME_PAGE_DATA)
+            val memoryData = saveState.get<String>(KEY_HOME_PAGE_DATA)
             liveData.postValue(memoryData)
         }
 
-        // 2 . from remote
+        // 2. from remote .
         // 为了适配因配置变更而导致的页面重建，重复利用之前的数据，加快新页面的渲染，不再请求接口
         if (liveData.value == null) {
             val remoteData = fetchDataFromRemote()
@@ -39,12 +40,9 @@ class HiViewModel(private val saveState: SavedStateHandle) : ViewModel() {
         return liveData
     }
 
-    private fun fetchDataFromRemote(): Any {
-        return arrayOf(GoodsModel)
+    private fun fetchDataFromRemote(): String {
+        return "fetch"
     }
 
 }
 
-class GoodsModel {
-
-}
