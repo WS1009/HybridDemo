@@ -30,7 +30,7 @@ public class MainActivity extends HiBaseActivity implements MainActivityLogic.Ac
 
         HiStatusBar.INSTANCE.setStatusBar(this, true, Color.WHITE, false);
 
-        HiDataBus.INSTANCE.<String>with("stickyData").setStickData("stickyData from MainActivity");
+        HiDataBus.INSTANCE.<String>with("stickyData").setStickyData("stickyData from MainActivity");
 
         preLoadRN();
     }
