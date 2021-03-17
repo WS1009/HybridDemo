@@ -1,17 +1,18 @@
-package com.ws.hi_concurrent
+package com.ws.hi_concurrent.coroutine
 
 import android.util.Log
-import com.ws.hi_concurrent.ConcurrentTest.TAG
+import com.ws.hi_concurrent.concurrent.ConcurrentTest.TAG
 import kotlinx.coroutines.*
 
 
-//https://doc.devio.org/as/book/docs/Part2/%E7%BA%BF%E7%A8%8B%E4%B8%8E%E7%BA%BF%E7%A8%8B%E6%B1%A0%E5%BC%80%E5%8F%91%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF/5.kotlin_coroutine.html
+//https://doc.devio.org/as/book/docs/Part2/线程与线程池开发核心技术/5.kotlin_coroutine.html
+//https://www.kotlincn.net/docs/reference/coroutines/basics.html
 object CoroutineScene {
 
     //---------------------------并发流程控制---------------------------
 
     /**
-     * 一次启动三个子线程，屏气同步的方式拿到他们的返回值，并且更新UI
+     * 一次启动三个子线程，采用同步的方式拿到他们的返回值，并且更新UI
      */
     fun startScene1() {
         GlobalScope.launch(Dispatchers.Main) {
@@ -55,10 +56,11 @@ object CoroutineScene {
 
     //---------------------------并发流程控制---------------------------
 
-    //启动一个协程，限制性request1,然后同时运行request2和reques3
+    //启动一个协程，先运行request1,然后同时运行request2和reques3
     fun startScene2() {
         GlobalScope.launch(Dispatchers.Main) {
             val result1 = request1()
+
             val deferred2 = GlobalScope.async {
                 request2(result1)
             }
@@ -66,6 +68,10 @@ object CoroutineScene {
             val deferred3 = GlobalScope.async {
                 request3(result1)
             }
+
+            //await必须同时调用，不能依次调用
+            //deferred2.await()
+            //deferred3.await()
 
             updateUI(deferred2.await(), deferred3.await())
         }
@@ -76,5 +82,17 @@ object CoroutineScene {
         Log.e(TAG, "param: $result2 + $result3")
     }
 
+    fun funWithContext() {
+        // 主线程内启动一个协程
+        GlobalScope.launch(Dispatchers.Main) {
+            // 切换到IO线程，withContext串行调用
+            withContext(Dispatchers.IO) {
+                delay(1000)
+                Log.d("RunBlockingDemo", "processIO in ${Thread.currentThread().name}")
+            }
+            // 自动切回主线程
+            Log.d("RunBlockingDemo", "processUI in ${Thread.currentThread().name}")
+        }
+    }
 
 }

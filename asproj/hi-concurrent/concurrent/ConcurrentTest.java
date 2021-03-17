@@ -1,4 +1,4 @@
-package com.ws.hi_concurrent;
+package com.ws.hi_concurrent.concurrent;
 
 import android.content.Context;
 import android.os.AsyncTask;
@@ -16,8 +16,8 @@ public class ConcurrentTest {
     private static final int MSG_WHAT_1 = 1;
 
     public static void main(Context context) {
-        class MyAsyncTask extends AsyncTask<String, Integer, String> {
 
+        class MyAsyncTask extends AsyncTask<String, Integer, String> {
             @Override
             protected String doInBackground(String... params) {
                 for (int i = 0; i < 10; i++) {
