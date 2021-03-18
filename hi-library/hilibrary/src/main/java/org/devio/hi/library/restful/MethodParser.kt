@@ -9,6 +9,7 @@ class MethodParser(
 ) {
 
     private var replaceRelativeUrl: String? = null
+    private var cacheStrategy: Int = CacheStrategy.NET_ONLY
     private var domainUrl: String? = null
     private var formPost: Boolean = true
     private var httpMethod: Int = -1
@@ -101,6 +102,8 @@ class MethodParser(
                     //relativeUrl = home/{categroyId}
                     replaceRelativeUrl = relativeUrl.replace("{$replaceName}", replacement)
                 }
+            } else if (annotation is CacheStrategy) {
+                cacheStrategy = annotation.value as Int
             } else {
                 throw  IllegalStateException("cannot handle parameter annotation :" + annotation.javaClass.toString())
             }
@@ -137,6 +140,8 @@ class MethodParser(
                 }
             } else if (annotation is BaseUrl) {
                 domainUrl = annotation.value
+            } else if (annotation is CacheStrategy) {
+                cacheStrategy = annotation.value
             } else {
                 throw IllegalStateException("cannot handle method annotation:" + annotation.javaClass.toString())
             }
@@ -210,6 +215,7 @@ class MethodParser(
         request.headers = headers
         request.httpMethod = httpMethod
         request.formPost = formPost
+        request.cacheStrategy = cacheStrategy
         return request
     }
 

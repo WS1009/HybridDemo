@@ -1,10 +1,18 @@
 package org.devio.hi.library.restful
 
 import android.telecom.Call
+import android.text.TextUtils
 import androidx.annotation.IntDef
+import java.lang.Exception
+import java.lang.StringBuilder
 import java.lang.reflect.Type
+import java.net.URLEncoder
 
 open class HiRequest {
+
+    private var cacheStrategyKey: String = ""
+    var cacheStrategy: Int = CacheStrategy.NET_ONLY
+
     @METHOD
     var httpMethod: Int = 0
     var headers: MutableMap<String, String>? = null
@@ -50,5 +58,32 @@ open class HiRequest {
             headers = mutableMapOf()
         }
         headers!![name] = value
+    }
+
+    fun getCacheKey(): String {
+        if (!TextUtils.isEmpty(cacheStrategyKey)) {
+            return cacheStrategyKey
+        }
+        val builder = StringBuilder()
+        val endUrl = endPointUrl()
+        builder.append(endUrl)
+        if (endUrl.indexOf("?") > 0 || endUrl.indexOf("&") > 0) {
+            builder.append("?")
+        }
+        if (parameters != null) {
+            for ((key, values) in parameters!!) {
+                try {
+                    val encodeValue = URLEncoder.encode(values, "UTF-8")
+                    builder.append(key).append("=").append(encodeValue).append("&")
+                } catch (e: Exception) {
+                    //e.printStackTrace()
+                }
+            }
+            builder.deleteCharAt(builder.length - 1)
+            cacheStrategyKey = builder.toString()
+        } else {
+            cacheStrategyKey = endUrl
+        }
+        return cacheStrategyKey
     }
 }
