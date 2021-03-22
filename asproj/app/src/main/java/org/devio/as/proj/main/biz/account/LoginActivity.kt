@@ -49,6 +49,9 @@ class LoginActivity : HiBaseActivity() {
 
                         //usernmanager
                         val data = response.data
+
+                        AccountManager.loginSuccess(data!!)
+
                         SPUtil.putString("boarding-pass", data!!)
                         setResult(Activity.RESULT_OK, Intent())
                         finish()

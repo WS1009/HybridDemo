@@ -2,6 +2,7 @@ package org.devio.`as`.proj.main.http
 
 import android.text.TextUtils
 import org.devio.`as`.proj.common.utils.SPUtil
+import org.devio.`as`.proj.main.biz.account.AccountManager
 import org.devio.hi.library.log.HiLog
 import org.devio.hi.library.restful.HiInterceptor
 import org.devio.hi.library.restful.HiRequest
@@ -11,8 +12,8 @@ class BizInterceptor : HiInterceptor {
         val request = chain.request()
         val response = chain.response()
         if (chain.isRequestPeriod) {
-            val boardingPass = SPUtil.getString("boarding-pass") ?: ""
-            request.addHeader("boarding-pass", boardingPass)
+            //val boardingPass = SPUtil.getString("boarding-pass") ?: ""
+            request.addHeader("boarding-pass", AccountManager.getBoardingPass())
             request.addHeader("auth-token", "MTU5Mjg1MDg3NDcwNw==")
         } else if (response != null) {
             var outputBuilder = StringBuilder()
