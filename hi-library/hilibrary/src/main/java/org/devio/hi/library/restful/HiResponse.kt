@@ -32,6 +32,6 @@ open class HiResponse<T> {
 
 
     fun successful(): Boolean {
-        return code == SUCCESS
+        return code == SUCCESS || code == CACHE_SUCCESS
     }
 }
