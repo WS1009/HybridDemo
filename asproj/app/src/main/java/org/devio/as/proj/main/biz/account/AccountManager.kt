@@ -25,7 +25,8 @@ object AccountManager {
     private var boardingPass: String? = null
     private val KEY_BOARDING_PASS = "board_pass"
     private val loginLiveData = MutableLiveData<Boolean>()
-    private val clearLoginForeverObservers = mutableListOf<Observer<Boolean>>()
+    private val loginForeverObservers = mutableListOf<Observer<Boolean>>()
+
     private val profileLiveData = MutableLiveData<UserProfile>()
     private val profileForeverObservers = mutableListOf<Observer<UserProfile?>>()
 
@@ -58,10 +59,10 @@ object AccountManager {
     }
 
     private fun clearLoginForeverObserver() {
-        for (observer in clearLoginForeverObservers) {
+        for (observer in loginForeverObservers) {
             loginLiveData.removeObserver(observer)
         }
-        clearLoginForeverObservers.clear()
+        loginForeverObservers.clear()
     }
 
     @Synchronized
