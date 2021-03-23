@@ -121,7 +121,7 @@ class HomePageFragment : HiBaseFragment() {
         }
 
         override fun getItemPosition(`object`: Any): Int {
-            //需要判断刷新前后两次Fragemnt在ViewPager中的位置有没有改变，如果改变就返回POSITION_NONE，否则返回POSITTION_UNCHANGE
+            //需要判断刷新前后两次Fragment在ViewPager中的位置有没有改变，如果改变就返回POSITION_NONE，否则返回POSITION_UNCHANGED
             //是为了避免缓存数据和接口数据 犯规的顶部导航栏数据一样的情况，导致页面fragment会被先detach，在attach重复执行生命周期，
             //同时还能兼顾缓存数据返回的顶部导航栏和接口返回的数据不一致
 

@@ -19,6 +19,6 @@ abstract class CacheDatabase :RoomDatabase(){
         }
     }
 
-    abstract var cacheDao:CacheDao
+    abstract fun cacheDao():CacheDao
 
 }

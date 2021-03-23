@@ -12,11 +12,11 @@ object HiStorage {
         val cache = Cache()
         cache.key = key
         cache.data = toByteArray(body)
-        CacheDatabase.get().cacheDao.saveCache(cache)
+        CacheDatabase.get().cacheDao().saveCache(cache)
     }
 
     fun <T> getCache(key: String): T? {
-        val cache = CacheDatabase.get().cacheDao.getCache(key)
+        val cache = CacheDatabase.get().cacheDao().getCache(key)
         return (if (cache?.data != null) {
             toObject(cache.data)
         } else null) as T
@@ -25,7 +25,7 @@ object HiStorage {
     fun deleteCache(key: String) {
         val cache = Cache()
         cache.key = key
-        CacheDatabase.get().cacheDao.deleteCache(cache)
+        CacheDatabase.get().cacheDao().deleteCache(cache)
     }
 
     private fun <T> toByteArray(body: T): ByteArray? {
