@@ -120,11 +120,11 @@ object AccountManager {
         profileForeverObservers.clear()
     }
 
-    fun getBoardingPass(): String {
+    fun getBoardingPass(): String? {
         if (TextUtils.isEmpty(boardingPass)) {
             boardingPass = SPUtil.getString(KEY_BOARDING_PASS)
         }
-        return boardingPass ?: ""
+        return boardingPass
     }
 
     fun isLogin(): Boolean {
