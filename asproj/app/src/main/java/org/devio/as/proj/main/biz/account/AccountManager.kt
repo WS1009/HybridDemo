@@ -124,7 +124,7 @@ object AccountManager {
         if (TextUtils.isEmpty(boardingPass)) {
             boardingPass = SPUtil.getString(KEY_BOARDING_PASS)
         }
-        return boardingPass
+        return boardingPass ?: ""
     }
 
     fun isLogin(): Boolean {
