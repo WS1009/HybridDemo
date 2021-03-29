@@ -48,7 +48,6 @@ object HiStatusBar {
 
         if (translucent) {
             //此时 能够使得页面的布局延伸到状态栏之下，但是状图兰的图标 也看不见了-,使得状图兰的图标 恢复可见性
-            //bugfix:手快写错了 应该是 SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN。
             visibility =
                 visibility or View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN or View.SYSTEM_UI_FLAG_LAYOUT_STABLE
         }

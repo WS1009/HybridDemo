@@ -4,29 +4,28 @@ import java.io.ByteArrayInputStream
 import java.io.ByteArrayOutputStream
 import java.io.ObjectInputStream
 import java.io.ObjectOutputStream
-import java.lang.Exception
 
 object HiStorage {
-
     fun <T> saveCache(key: String, body: T) {
         val cache = Cache()
         cache.key = key
         cache.data = toByteArray(body)
-        CacheDatabase.get().cacheDao().saveCache(cache)
+        CacheDatabase.get().cacheDao.saveCache(cache)
     }
 
     fun <T> getCache(key: String): T? {
-        val cache = CacheDatabase.get().cacheDao().getCache(key)
+        val cache = CacheDatabase.get().cacheDao.getCache(key)
         return (if (cache?.data != null) {
             toObject(cache.data)
-        } else null) as T
+        } else null) as? T
     }
 
     fun deleteCache(key: String) {
         val cache = Cache()
         cache.key = key
-        CacheDatabase.get().cacheDao().deleteCache(cache)
+        CacheDatabase.get().cacheDao.deleteCache(cache)
     }
+
 
     private fun <T> toByteArray(body: T): ByteArray? {
         var baos: ByteArrayOutputStream? = null
@@ -43,13 +42,13 @@ object HiStorage {
             baos?.close()
             oos?.close()
         }
+
         return ByteArray(0)
     }
 
     private fun toObject(data: ByteArray?): Any? {
         var bais: ByteArrayInputStream? = null
         var ois: ObjectInputStream? = null
-
         try {
             bais = ByteArrayInputStream(data)
             ois = ObjectInputStream(bais)
@@ -57,10 +56,11 @@ object HiStorage {
         } catch (e: Exception) {
             e.printStackTrace()
         } finally {
+
             bais?.close()
             ois?.close()
         }
+
         return null
     }
-
 }

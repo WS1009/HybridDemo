@@ -5,7 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 
-abstract class HiDataItem<DATA, VH : RecyclerView.ViewHolder>(data: DATA?) {
+abstract class HiDataItem<DATA, VH : RecyclerView.ViewHolder>(data: DATA? = null) {
     val TAG: String = "HiDataItem";
     var hiAdapter: HiAdapter? = null
     var mData: DATA? = null
@@ -70,6 +70,10 @@ abstract class HiDataItem<DATA, VH : RecyclerView.ViewHolder>(data: DATA?) {
      */
     open fun onViewDetachedFromWindow(holder: VH) {
 
+    }
+
+   open fun onCreateViewHolder(parent: ViewGroup): VH? {
+        return null
     }
 
 }

@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7ef2ddac-ce71-432b-ac08-648409a80727" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/org/devio/as/proj/main/ExampleInstrumentedTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/fonts/iconfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/index.android.bundle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/devio/as/proj/main/HiApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/devio/as/proj/main/MainActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/devio/as/proj/main/VipActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/devio/as/proj/main/biz/AuthenticationActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/devio/as/proj/main/biz/ProfileDetailActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/devio/as/proj/main/biz/account/AccountManager.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/devio/as/proj/main/biz/account/LoginActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/devio/as/proj/main/biz/account/RegistrationActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/devio/as/proj/main/biz/goods/GoodsListActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/devio/as/proj/main/biz/goods/GoodsListFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/devio/as/proj/main/fragment/FavoriteFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/devio/as/proj/main/fragment/ProfileFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/devio/as/proj/main/fragment/RecommendFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/devio/as/proj/main/fragment/category/CategoryFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/devio/as/proj/main/fragment/category/CategoryItemDecoration.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/devio/as/proj/main/fragment/home/BannerItem.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/devio/as/proj/main/fragment/home/GoodsItem.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/devio/as/proj/main/fragment/home/GridItem.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/devio/as/proj/main/fragment/home/HomePageFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/devio/as/proj/main/fragment/home/HomeTabFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/devio/as/proj/main/http/ApiFactory.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/devio/as/proj/main/http/BizInterceptor.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/devio/as/proj/main/http/GsonConvert.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/devio/as/proj/main/http/HttpStatusInterceptor.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/devio/as/proj/main/http/RetrofitCallFactory.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/devio/as/proj/main/http/api/AccountApi.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/devio/as/proj/main/http/api/CategoryApi.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/devio/as/proj/main/http/api/GoodsApi.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/devio/as/proj/main/http/api/HomeApi.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/devio/as/proj/main/logic/MainActivityLogic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/devio/as/proj/main/model/HomeModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/devio/as/proj/main/model/UserModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/devio/as/proj/main/route/BizInterceptor.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/devio/as/proj/main/route/DegradeGlobalActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/devio/as/proj/main/route/DegradeServiceImpl.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/devio/as/proj/main/route/HiRoute.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/devio/as/proj/main/route/RouteFlag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/node_modules_reactnative_libraries_newappscreen_components_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_avatar_default.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bg_red_circle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/shadow_circle.9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/shape_goods_label.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/shape_home_search.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_goods_list.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_category.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_favoite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_profile_page.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_recommend.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_global_degrade.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_home_goods_list_item1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_home_goods_list_item2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_home_op_grid_item.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_profile_banner_item.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/charles.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/dimes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/xml/network_sercurity_config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/org/devio/as/proj/main/ExampleUnitTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/consumer-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/androidTest/java/org/devio/as/proj/common/ExampleInstrumentedTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/devio/as/proj/common/core/IHiBridge.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/devio/as/proj/common/rn/HiRNActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/devio/as/proj/common/rn/HiRNBridge.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/devio/as/proj/common/rn/HiRNCacheManager.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/devio/as/proj/common/rn/HiRNExtension.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/devio/as/proj/common/rn/HiReactPackage.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/devio/as/proj/common/rn/view/HiRNImageView.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/devio/as/proj/common/rn/view/HiRNImageViewManager.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/devio/as/proj/common/rn/view/HiRNImageViewPackage.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/devio/as/proj/common/tab/HiFragmentTabView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/devio/as/proj/common/tab/HiTabViewAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/devio/as/proj/common/ui/component/HiAbsListFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/devio/as/proj/common/ui/component/HiBaseActionInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/devio/as/proj/common/ui/component/HiBaseActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/devio/as/proj/common/ui/component/HiBaseApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/devio/as/proj/common/ui/component/HiBaseFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/devio/as/proj/common/ui/view/EmptyView.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/devio/as/proj/common/ui/view/HiRecyclerView.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/devio/as/proj/common/ui/view/IconFontTextView.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/devio/as/proj/common/ui/view/ImageViewExts.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/devio/as/proj/common/ui/view/InputItemLayout.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/devio/as/proj/common/utils/SPUtil.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/res/layout/fragment_flutter.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/res/layout/fragment_list.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/res/layout/layout_content_loading_view.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/res/layout/layout_empty_view.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/res/layout/layout_footer_loading.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/res/values/attrs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/test/java/org/devio/as/proj/common/ExampleUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-concurrent/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-concurrent/MainActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-concurrent/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-concurrent/concurrent/ConcurrentTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-concurrent/concurrent/CountDownLatchDemo.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-concurrent/concurrent/SemaphoreDemo.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-concurrent/coroutine/CancelAndJoinDemo.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-concurrent/coroutine/CoroutineScene.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-concurrent/coroutine/CoroutineScene2.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-concurrent/coroutine/CoroutineScene2_decompiled.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-concurrent/coroutine/CoroutineScene3.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-concurrent/coroutine/DispatchersDemo.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-concurrent/coroutine/RunBlockingDemo.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-concurrent/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-concurrent/src/androidTest/java/com/ws/hi_concurrent/ExampleInstrumentedTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-concurrent/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-concurrent/src/main/assets/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-concurrent/src/main/java/com/ws/hi_concurrent/MainActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-concurrent/src/main/java/com/ws/hi_concurrent/concurrent/ConcurrentTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-concurrent/src/main/java/com/ws/hi_concurrent/concurrent/CountDownLatchDemo.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-concurrent/src/main/java/com/ws/hi_concurrent/concurrent/SemaphoreDemo.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-concurrent/src/main/java/com/ws/hi_concurrent/coroutine/CancelAndJoinDemo.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-concurrent/src/main/java/com/ws/hi_concurrent/coroutine/CoroutineScene.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-concurrent/src/main/java/com/ws/hi_concurrent/coroutine/CoroutineScene2.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-concurrent/src/main/java/com/ws/hi_concurrent/coroutine/CoroutineScene2_decompiled.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-concurrent/src/main/java/com/ws/hi_concurrent/coroutine/CoroutineScene3.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-concurrent/src/main/java/com/ws/hi_concurrent/coroutine/DispatchersDemo.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-concurrent/src/main/java/com/ws/hi_concurrent/coroutine/RunBlockingDemo.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-concurrent/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-concurrent/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-concurrent/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-concurrent/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-concurrent/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-concurrent/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-concurrent/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-concurrent/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-concurrent/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-concurrent/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-concurrent/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-concurrent/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-concurrent/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-concurrent/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-concurrent/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-concurrent/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-concurrent/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-concurrent/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-concurrent/src/test/java/com/ws/hi_concurrent/ExampleUnitTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-jetpack/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-jetpack/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-jetpack/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-jetpack/schemas/org.devio.as.proj.hi_jetpack.room.CacheDatabase/1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-jetpack/src/androidTest/java/org/devio/as/proj/hi_jetpack/ExampleInstrumentedTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-jetpack/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-jetpack/src/main/java/org/devio/as/proj/hi_jetpack/room/Cache.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-jetpack/src/main/java/org/devio/as/proj/hi_jetpack/room/CacheDao.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-jetpack/src/main/java/org/devio/as/proj/hi_jetpack/room/CacheDatabase.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-jetpack/src/main/java/org/devio/as/proj/hi_jetpack/viewmodel/ViewModelActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-jetpack/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-jetpack/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-jetpack/src/main/res/layout/activity_view_model.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-jetpack/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-jetpack/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-jetpack/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-jetpack/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-jetpack/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-jetpack/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-jetpack/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-jetpack/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-jetpack/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-jetpack/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-jetpack/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-jetpack/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-jetpack/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-jetpack/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-jetpack/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi-jetpack/src/test/java/org/devio/as/proj/hi_jetpack/ExampleUnitTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi_concurrent/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi_concurrent/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi_concurrent/consumer-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi_concurrent/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi_concurrent/src/androidTest/java/org/devio/as/hi/hiconcurrent_demo/ExampleInstrumentedTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi_concurrent/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi_concurrent/src/main/java/org/devio/as/hi/hiconcurrent_demo/MainActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi_concurrent/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi_concurrent/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi_concurrent/src/test/java/org/devio/as/hi/hiconcurrent_demo/ExampleUnitTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi_debugtool/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi_debugtool/consumer-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi_debugtool/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi_debugtool/src/androidTest/java/org/devio/as/proj/debug/ExampleInstrumentedTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi_debugtool/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi_debugtool/src/main/java/org/devio/as/proj/debug/DebugToolDialogFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi_debugtool/src/main/java/org/devio/as/proj/debug/DebugTools.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi_debugtool/src/main/java/org/devio/as/proj/debug/HiDebug.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi_debugtool/src/main/java/org/devio/as/proj/debug/PlaygroundActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi_debugtool/src/main/res/drawable/shape_hi_debug_tool.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi_debugtool/src/main/res/drawable/shape_hi_debug_tool_divider.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi_debugtool/src/main/res/layout/activity_playground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi_debugtool/src/main/res/layout/hi_debug_tool.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi_debugtool/src/main/res/layout/hi_debug_tool_item.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi_debugtool/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi_debugtool/src/test/java/org/devio/as/proj/debug/ExampleUnitTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/app/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/app/proguard-rules.pro" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/app/proguard-rules.pro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/app/src/androidTest/java/org/devio/hi/library/ExampleInstrumentedTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/app/src/androidTest/java/org/devio/hi/library/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/app/src/main/java/org/devio/hi/library/app/MApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/app/src/main/java/org/devio/hi/library/app/MApplication.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/app/src/main/java/org/devio/hi/library/app/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/app/src/main/java/org/devio/hi/library/app/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/app/src/main/java/org/devio/hi/library/app/demo/HiLogDemoActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/app/src/main/java/org/devio/hi/library/app/demo/HiLogDemoActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/app/src/main/res/layout/activity_hi_log_demo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/app/src/main/res/layout/activity_hi_log_demo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/app/src/main/res/layout/activity_net_work_demo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/app/src/main/res/layout/activity_net_work_demo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/app/src/test/java/org/devio/hi/library/ExampleUnitTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/app/src/test/java/org/devio/hi/library/ExampleUnitTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/hilibrary/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/hilibrary/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/hilibrary/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/hilibrary/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/hilibrary/consumer-rules.pro" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/hilibrary/consumer-rules.pro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/hilibrary/proguard-rules.pro" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/hilibrary/proguard-rules.pro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/hilibrary/src/androidTest/java/org/devio/hi/library/ExampleInstrumentedTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/hilibrary/src/androidTest/java/org/devio/hi/library/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/cache/Cache.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/cache/Cache.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/cache/CacheDao.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/cache/CacheDao.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/cache/CacheDatabase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/cache/CacheDatabase.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/cache/HiStorage.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/cache/HiStorage.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/executor/HiExecutor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/executor/HiExecutor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/log/HiConsolePrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/log/HiConsolePrinter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/log/HiFilePrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/log/HiFilePrinter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/log/HiLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/log/HiLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/log/HiLogConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/log/HiLogConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/log/HiLogFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/log/HiLogFormatter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/log/HiLogManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/log/HiLogManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/log/HiLogMo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/log/HiLogMo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/log/HiLogPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/log/HiLogPrinter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/log/HiLogType.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/log/HiLogType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/log/HiStackTraceFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/log/HiStackTraceFormatter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/log/HiStackTraceUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/log/HiStackTraceUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/log/HiThreadFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/log/HiThreadFormatter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/log/HiViewPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/log/HiViewPrinter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/log/HiViewPrinterProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/log/HiViewPrinterProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/restful/CacheStrategy.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/restful/HiCall.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/restful/HiCall.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/restful/HiCallback.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/restful/HiCallback.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/restful/HiConvert.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/restful/HiConvert.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/restful/HiInterceptor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/restful/HiInterceptor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/restful/HiRequest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/restful/HiRequest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/restful/HiResponse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/restful/HiResponse.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/restful/HiRestful.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/restful/HiRestful.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/restful/MethodParser.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/restful/MethodParser.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/restful/Scheduler.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/restful/Scheduler.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/restful/annotation/BaseUrl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/restful/annotation/BaseUrl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/restful/annotation/Filed.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/restful/annotation/Filed.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/restful/annotation/GET.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/restful/annotation/GET.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/restful/annotation/Headers.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/restful/annotation/Headers.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/restful/annotation/POST.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/restful/annotation/POST.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/restful/annotation/Path.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/restful/annotation/Path.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/util/ActivityManager.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/util/ActivityManager.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/util/AppGlobals.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/util/AppGlobals.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/util/HiDataBus.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/util/HiDataBus.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/util/HiDisplayUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/util/HiDisplayUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/util/HiStatusBar.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/util/HiStatusBar.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/util/HiViewUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/util/HiViewUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/util/MainHandler.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/util/MainHandler.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/res/layout/hilog_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/res/layout/hilog_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/hilibrary/src/test/java/org/devio/hi/library/ExampleUnitTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/hilibrary/src/test/java/org/devio/hi/library/ExampleUnitTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/app/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/app/proguard-rules.pro" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/app/proguard-rules.pro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/app/src/androidTest/java/org/devio/hi/ui/ExampleInstrumentedTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/app/src/androidTest/java/org/devio/hi/ui/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/app/src/main/assets/fonts/iconfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/app/src/main/assets/fonts/iconfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/app/src/main/assets/loading_wave.json" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/app/src/main/assets/loading_wave.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/app/src/main/assets/preloader.json" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/app/src/main/assets/preloader.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/app/src/main/java/org/devio/hi/ui/app/MApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/app/src/main/java/org/devio/hi/ui/app/MApplication.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/app/src/main/java/org/devio/hi/ui/app/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/app/src/main/java/org/devio/hi/ui/app/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/app/src/main/java/org/devio/hi/ui/app/demo/banner/BannerMo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/app/src/main/java/org/devio/hi/ui/app/demo/banner/BannerMo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/app/src/main/java/org/devio/hi/ui/app/demo/banner/HiBannerDemoActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/app/src/main/java/org/devio/hi/ui/app/demo/banner/HiBannerDemoActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/app/src/main/java/org/devio/hi/ui/app/demo/refresh/HiLottieOverView.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/app/src/main/java/org/devio/hi/ui/app/demo/refresh/HiLottieOverView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/app/src/main/java/org/devio/hi/ui/app/demo/refresh/HiRefreshDemoActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/app/src/main/java/org/devio/hi/ui/app/demo/refresh/HiRefreshDemoActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/app/src/main/java/org/devio/hi/ui/app/demo/tab/HiTabBottomDemoActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/app/src/main/java/org/devio/hi/ui/app/demo/tab/HiTabBottomDemoActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/app/src/main/java/org/devio/hi/ui/app/demo/tab/HiTabTopDemoActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/app/src/main/java/org/devio/hi/ui/app/demo/tab/HiTabTopDemoActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/app/src/main/res/drawable/fire.png" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/app/src/main/res/drawable/fire.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/app/src/main/res/layout/activity_hi_banner_demo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/app/src/main/res/layout/activity_hi_banner_demo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/app/src/main/res/layout/activity_hi_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/app/src/main/res/layout/activity_hi_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/app/src/main/res/layout/activity_hi_refresh.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/app/src/main/res/layout/activity_hi_refresh.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/app/src/main/res/layout/activity_hi_slider_demo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/app/src/main/res/layout/activity_hi_slider_demo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/app/src/main/res/layout/activity_hi_tab_bottom_demo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/app/src/main/res/layout/activity_hi_tab_bottom_demo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/app/src/main/res/layout/activity_hi_tab_top_demo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/app/src/main/res/layout/activity_hi_tab_top_demo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/app/src/main/res/layout/activity_hi_tabtop.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/app/src/main/res/layout/activity_hi_tabtop.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/app/src/main/res/layout/banner_item_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/app/src/main/res/layout/banner_item_layout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/app/src/main/res/layout/hi_item_title_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/app/src/main/res/layout/hi_item_title_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/app/src/main/res/layout/item_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/app/src/main/res/layout/item_layout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/app/src/main/res/layout/lottie_overview.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/app/src/main/res/layout/lottie_overview.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/app/src/test/java/org/devio/hi/ui/ExampleUnitTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/app/src/test/java/org/devio/hi/ui/ExampleUnitTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/consumer-rules.pro" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/consumer-rules.pro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/proguard-rules.pro" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/proguard-rules.pro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/src/androidTest/java/org/devio/hi/ui/ExampleInstrumentedTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/src/androidTest/java/org/devio/hi/ui/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/banner/HiBanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/banner/HiBanner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/banner/core/HiBannerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/banner/core/HiBannerAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/banner/core/HiBannerDelegate.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/banner/core/HiBannerDelegate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/banner/core/HiBannerMo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/banner/core/HiBannerMo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/banner/core/HiBannerScroller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/banner/core/HiBannerScroller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/banner/core/HiViewPager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/banner/core/HiViewPager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/banner/core/IBindAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/banner/core/IBindAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/banner/core/IHiBanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/banner/core/IHiBanner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/banner/indicator/HiCircleIndicator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/banner/indicator/HiCircleIndicator.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/banner/indicator/HiIndicator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/banner/indicator/HiIndicator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/banner/indicator/HiNumIndicator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/banner/indicator/HiNumIndicator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/item/HiAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/item/HiAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/item/HiDataItem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/item/HiDataItem.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/item/HiViewHolder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/item/HiViewHolder.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/refresh/HiGestureDetector.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/refresh/HiGestureDetector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/refresh/HiOverView.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/refresh/HiOverView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/refresh/HiRefresh.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/refresh/HiRefresh.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/refresh/HiRefreshLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/refresh/HiRefreshLayout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/refresh/HiScrollUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/refresh/HiScrollUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/refresh/HiTextOverView.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/refresh/HiTextOverView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/slider/HiSliderView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/slider/HiSliderView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/tab/bottom/HiTabBottom.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/tab/bottom/HiTabBottom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/tab/bottom/HiTabBottomInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/tab/bottom/HiTabBottomInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/tab/bottom/HiTabBottomLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/tab/bottom/HiTabBottomLayout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/tab/common/IHiTab.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/tab/common/IHiTab.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/tab/common/IHiTabLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/tab/common/IHiTabLayout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/tab/top/HiTabTop.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/tab/top/HiTabTop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/tab/top/HiTabTopInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/tab/top/HiTabTopInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/tab/top/HiTabTopLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/src/main/java/org/devio/hi/ui/tab/top/HiTabTopLayout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/src/main/res/anim/rotate_anim.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/src/main/res/anim/rotate_anim.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/src/main/res/drawable/rotate_daisy.png" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/src/main/res/drawable/rotate_daisy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/src/main/res/drawable/shape_hi_slider_indicator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/src/main/res/drawable/shape_hi_slider_indicator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/src/main/res/drawable/shape_point_normal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/src/main/res/drawable/shape_point_normal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/src/main/res/drawable/shape_point_select.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/src/main/res/drawable/shape_point_select.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/src/main/res/drawable/shape_tab_top_indicator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/src/main/res/drawable/shape_tab_top_indicator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/src/main/res/layout/activity_base.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/src/main/res/layout/activity_base.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/src/main/res/layout/hi_banner_item_image.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/src/main/res/layout/hi_banner_item_image.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/src/main/res/layout/hi_bottom_layout_bg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/src/main/res/layout/hi_bottom_layout_bg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/src/main/res/layout/hi_refresh_overview.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/src/main/res/layout/hi_refresh_overview.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/src/main/res/layout/hi_slider_content_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/src/main/res/layout/hi_slider_content_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/src/main/res/layout/hi_slider_left_menu_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/src/main/res/layout/hi_slider_left_menu_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/src/main/res/layout/hi_slider_menu_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/src/main/res/layout/hi_slider_menu_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/src/main/res/layout/hi_slider_right.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/src/main/res/layout/hi_slider_right.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/src/main/res/layout/hi_slider_right_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/src/main/res/layout/hi_slider_right_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/src/main/res/layout/hi_tab_bottom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/src/main/res/layout/hi_tab_bottom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/src/main/res/layout/hi_tab_top.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/src/main/res/layout/hi_tab_top.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/src/main/res/layout/hi_tabtop_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/src/main/res/layout/hi_tabtop_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/src/main/res/values/attrs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/src/main/res/values/attrs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/src/main/res/values/color.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/src/main/res/values/color.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/src/main/res/values/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/src/main/res/values/dimens.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/hiui/src/test/java/org/devio/hi/ui/ExampleUnitTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/hiui/src/test/java/org/devio/hi/ui/ExampleUnitTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-ui/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-ui/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rn_module/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rn_module/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../rn_module/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rn_module/js/lib/HiRNBridge.js" beforeDir="false" afterPath="$PROJECT_DIR$/../rn_module/js/lib/HiRNBridge.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rn_module/js/lib/HiRNImageView.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rn_module/js/page/BrowsingPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../rn_module/js/page/BrowsingPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rn_module/js/page/RNBridgeDemo.js" beforeDir="false" afterPath="$PROJECT_DIR$/../rn_module/js/page/RNBridgeDemo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rn_module/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rn_module/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../rn_module/package.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1qRBWJbdYRKyZo5uNZ5xOsYILga" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="abbreviatePackageNames" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7ef2ddac-ce71-432b-ac08-648409a80727" name="Default Changelist" comment="" />
+      <created>1617032552678</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617032552678</updated>
+    </task>
+    <servers />
+  </component>
+</project>

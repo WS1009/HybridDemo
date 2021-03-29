@@ -1,4 +1,3 @@
 import {NativeModules} from 'react-native'
 
-module.exports = NativeModules.HiRNBridge;
-
+module.exports=NativeModules.HiRNBridge;

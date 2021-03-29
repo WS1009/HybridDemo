@@ -69,13 +69,7 @@ object HiExecutor {
         }
     }
 
-    @JvmOverloads
     fun execute(@IntRange(from = 0, to = 10) priority: Int = 0, runnable: Runnable) {
-        hiExecutor.execute(PriorityRunnable(priority, runnable))
-    }
-
-    @JvmOverloads
-    fun execute(@IntRange(from = 0, to = 10) priority: Int = 0, runnable: Callable<*>) {
         hiExecutor.execute(PriorityRunnable(priority, runnable))
     }
 
@@ -83,7 +77,7 @@ object HiExecutor {
         override fun run() {
             mainHandler.post { onPrepare() }
 
-            val t: T = onBackground();
+            val t: T? = onBackground()
 
             //移除所有消息.防止需要执行onCompleted了，onPrepare还没被执行，那就不需要执行了
             mainHandler.removeCallbacksAndMessages(null)
@@ -94,8 +88,8 @@ object HiExecutor {
             //转菊花
         }
 
-        abstract fun onBackground(): T
-        abstract fun onCompleted(t: T)
+        abstract fun onBackground(): T?
+        abstract fun onCompleted(t: T?)
     }
 
     class PriorityRunnable(val priority: Int, private val runnable: Runnable) : Runnable,
@@ -111,23 +105,19 @@ object HiExecutor {
     }
 
 
-    @Synchronized
     fun pause() {
         lock.lock()
         try {
-            if (isPaused) return
             isPaused = true
+            HiLog.e(TAG, "hiExecutor is paused")
         } finally {
             lock.unlock()
         }
-        HiLog.e(TAG, "hiExecutor is paused")
     }
 
-    @Synchronized
     fun resume() {
         lock.lock()
         try {
-            if (!isPaused) return
             isPaused = false
             pauseCondition.signalAll()
         } finally {

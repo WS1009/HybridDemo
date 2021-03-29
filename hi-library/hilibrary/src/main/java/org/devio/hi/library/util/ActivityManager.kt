@@ -14,7 +14,7 @@ class ActivityManager private constructor() {
     private val activityRefs = ArrayList<WeakReference<Activity>>()
     private val frontBackCallbacks = ArrayList<FrontBackCallback>()
     private var activityStartCount = 0
-    private var front = true;
+    var front = true
     fun init(application: Application) {
         application.registerActivityLifecycleCallbacks(InnerActivityLifecycleCallbacks())
     }
@@ -49,7 +49,7 @@ class ActivityManager private constructor() {
         }
 
         override fun onActivityStopped(activity: Activity) {
-            activityStartCount--;
+            activityStartCount--
             if (activityStartCount <= 0 && front) {
                 front = false
                 onFrontBackChanged(front)
@@ -80,10 +80,10 @@ class ActivityManager private constructor() {
             return null
         } else {
             val activityRef = activityRefs[activityRefs.size - 1]
-            val activity = activityRef.get();
+            val activity: Activity? = activityRef.get();
             if (onlyAlive) {
-                if (activityRef == null || activity!!.isFinishing
-                    || (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1 && activity!!.isDestroyed)
+                if (activity == null || activity.isFinishing
+                    || (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1 && activity.isDestroyed)
                 ) {
                     activityRefs.remove(activityRef)
                     return getTopActivity(onlyAlive)

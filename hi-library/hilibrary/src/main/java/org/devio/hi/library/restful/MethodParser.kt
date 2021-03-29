@@ -1,5 +1,6 @@
 package org.devio.hi.library.restful
 
+import org.devio.hi.library.cache.Cache
 import org.devio.hi.library.restful.annotation.*
 import java.lang.reflect.*
 
@@ -7,7 +8,6 @@ class MethodParser(
     private val baseUrl: String,
     method: Method
 ) {
-
     private var replaceRelativeUrl: String? = null
     private var cacheStrategy: Int = CacheStrategy.NET_ONLY
     private var domainUrl: String? = null
@@ -103,7 +103,7 @@ class MethodParser(
                     replaceRelativeUrl = relativeUrl.replace("{$replaceName}", replacement)
                 }
             } else if (annotation is CacheStrategy) {
-                cacheStrategy = annotation.value as Int
+                cacheStrategy = value as Int
             } else {
                 throw  IllegalStateException("cannot handle parameter annotation :" + annotation.javaClass.toString())
             }
@@ -123,6 +123,13 @@ class MethodParser(
                 relativeUrl = annotation.value
                 httpMethod = HiRequest.METHOD.POST
                 formPost = annotation.formPost
+            } else if (annotation is PUT) {
+                formPost = annotation.formPost
+                httpMethod = HiRequest.METHOD.PUT
+                relativeUrl = annotation.value
+            } else if (annotation is DELETE) {
+                httpMethod = HiRequest.METHOD.DELETE
+                relativeUrl = annotation.value
             } else if (annotation is Headers) {
                 val headersArray = annotation.value
                 //@Headers("auth-token:token", "accountId:123456")
@@ -147,13 +154,16 @@ class MethodParser(
             }
         }
 
-        require((httpMethod == HiRequest.METHOD.GET) || (httpMethod == HiRequest.METHOD.POST)) {
-            String.format("method %s must has one of GET,POST ", method.name)
+        require((httpMethod == HiRequest.METHOD.GET)
+                || (httpMethod == HiRequest.METHOD.POST
+                || (httpMethod == HiRequest.METHOD.PUT)
+                || (httpMethod == HiRequest.METHOD.DELETE))) {
+            String.format("method %s must has one of GET,POST,PUT,DELETE ", method.name)
         }
 
-        if (domainUrl == null) {
-            domainUrl = baseUrl
-        }
+            if (domainUrl == null) {
+                domainUrl = baseUrl
+            }
 
     }
 

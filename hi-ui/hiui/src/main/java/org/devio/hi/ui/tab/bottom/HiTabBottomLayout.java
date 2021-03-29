@@ -167,7 +167,8 @@ public class HiTabBottomLayout extends FrameLayout implements IHiTabLayout<HiTab
     private void addBackground() {
         View view = LayoutInflater.from(getContext()).inflate(R.layout.hi_bottom_layout_bg, null);
 
-        LayoutParams params = new LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, HiDisplayUtil.dp2px(tabBottomHeight, getResources()));
+        LayoutParams params =
+                new LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, HiDisplayUtil.dp2px(tabBottomHeight, getResources()));
         params.gravity = Gravity.BOTTOM;
         addView(view, params);
         view.setAlpha(bottomAlpha);
@@ -200,6 +201,19 @@ public class HiTabBottomLayout extends FrameLayout implements IHiTabLayout<HiTab
         if (targetView != null) {
             targetView.setPadding(0, 0, 0, HiDisplayUtil.dp2px(tabBottomHeight));
             targetView.setClipToPadding(false);
+        }
+    }
+
+    public void resizeHiTabBottomLayout() {
+        int width = HiDisplayUtil.getDisplayWidthInPx(getContext()) / infoList.size();
+        ViewGroup frameLayout = (ViewGroup) getChildAt(getChildCount() - 1);
+        int childCount = frameLayout.getChildCount();
+        for (int i = 0; i < childCount; i++) {
+            View button = frameLayout.getChildAt(i);
+            FrameLayout.LayoutParams params = (LayoutParams) button.getLayoutParams();
+            params.width = width;
+            params.leftMargin = i * width;
+            button.setLayoutParams(params);
         }
     }
 }

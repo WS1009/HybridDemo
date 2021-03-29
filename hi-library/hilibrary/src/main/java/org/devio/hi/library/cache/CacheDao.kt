@@ -4,6 +4,7 @@ import androidx.room.*
 
 @Dao
 interface CacheDao {
+
     @Insert(entity = Cache::class, onConflict = OnConflictStrategy.REPLACE)
     fun saveCache(cache: Cache): Long
 

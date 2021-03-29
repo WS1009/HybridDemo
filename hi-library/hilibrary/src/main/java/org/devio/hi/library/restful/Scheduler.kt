@@ -1,9 +1,11 @@
 package org.devio.hi.library.restful
 
+import android.util.Log
 import org.devio.hi.library.cache.Cache
 import org.devio.hi.library.cache.HiStorage
 import org.devio.hi.library.executor.HiExecutor
 import org.devio.hi.library.log.HiLog
+import org.devio.hi.library.restful.annotation.CacheStrategy
 import org.devio.hi.library.util.MainHandler
 
 /**
@@ -25,7 +27,6 @@ class Scheduler(
     ) : HiCall<T> {
         override fun execute(): HiResponse<T> {
             dispatchInterceptor(request, null)
-
             if (request.cacheStrategy == CacheStrategy.CACHE_FIRST) {
                 val cacheResponse = readCache<T>()
                 if (cacheResponse.data != null) {
@@ -34,7 +35,6 @@ class Scheduler(
             }
 
             val response = delegate.execute()
-
             saveCacheIfNeed(response)
 
             dispatchInterceptor(request, response)
@@ -44,15 +44,15 @@ class Scheduler(
 
         override fun enqueue(callback: HiCallback<T>) {
             dispatchInterceptor(request, null)
-
             if (request.cacheStrategy == CacheStrategy.CACHE_FIRST) {
                 HiExecutor.execute(runnable = Runnable {
                     val cacheResponse = readCache<T>()
                     if (cacheResponse.data != null) {
-                        //跑到主线程中
+                        //抛到主线程里面
                         MainHandler.sendAtFrontOfQueue(runnable = Runnable {
                             callback.onSuccess(cacheResponse)
                         })
+
                         HiLog.d("enqueue ,cache : " + request.getCacheKey())
                     }
                 })
@@ -65,6 +65,8 @@ class Scheduler(
                     saveCacheIfNeed(response)
 
                     callback.onSuccess(response)
+
+                    HiLog.d("enqueue ,remote : " + request.getCacheKey())
                 }
 
                 override fun onFailed(throwable: Throwable) {
@@ -75,7 +77,9 @@ class Scheduler(
         }
 
         private fun saveCacheIfNeed(response: HiResponse<T>) {
-            if (request.cacheStrategy == CacheStrategy.CACHE_FIRST || request.cacheStrategy == CacheStrategy.NET_CACHE) {
+            if (request.cacheStrategy == CacheStrategy.CACHE_FIRST
+                || request.cacheStrategy == CacheStrategy.NET_CACHE
+            ) {
                 if (response.data != null) {
                     HiExecutor.execute(runnable = Runnable {
                         HiStorage.saveCache(request.getCacheKey(), response.data)
@@ -85,8 +89,8 @@ class Scheduler(
         }
 
         private fun <T> readCache(): HiResponse<T> {
-            //HiStorage查询缓存需要提供一个cache key
-            //request的url+参数
+            //historage 查询缓存 需要提供一个cache key
+            //request de url+参数
             val cacheKey = request.getCacheKey()
             val cache = HiStorage.getCache<T>(cacheKey)
             val cacheResponse = HiResponse<T>()
@@ -120,6 +124,7 @@ class Scheduler(
             override fun response(): HiResponse<*>? {
                 return response
             }
+
 
             fun dispatch() {
                 val interceptor = interceptors[callIndex]

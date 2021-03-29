@@ -5,7 +5,6 @@ import android.os.Looper
 import android.os.Message
 
 object MainHandler {
-
     private val handler = Handler(Looper.getMainLooper())
 
     fun post(runnable: Runnable) {
@@ -19,5 +18,9 @@ object MainHandler {
     fun sendAtFrontOfQueue(runnable: Runnable) {
         val msg = Message.obtain(handler, runnable)
         handler.sendMessageAtFrontOfQueue(msg)
+    }
+
+    fun remove(runnable: Runnable) {
+        handler.removeCallbacks(runnable)
     }
 }

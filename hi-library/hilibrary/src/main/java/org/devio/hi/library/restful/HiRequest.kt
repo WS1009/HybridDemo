@@ -1,8 +1,8 @@
 package org.devio.hi.library.restful
 
-import android.telecom.Call
 import android.text.TextUtils
 import androidx.annotation.IntDef
+import org.devio.hi.library.restful.annotation.CacheStrategy
 import java.lang.Exception
 import java.lang.StringBuilder
 import java.lang.reflect.Type
@@ -27,6 +27,8 @@ open class HiRequest {
         companion object {
             const val GET = 0
             const val POST = 1
+            const val PUT=2
+            const val DELETE=3
         }
     }
 
@@ -68,15 +70,18 @@ open class HiRequest {
         val endUrl = endPointUrl()
         builder.append(endUrl)
         if (endUrl.indexOf("?") > 0 || endUrl.indexOf("&") > 0) {
+            builder.append("&")
+        } else {
             builder.append("?")
         }
+
         if (parameters != null) {
-            for ((key, values) in parameters!!) {
+            for ((key, value) in parameters!!) {
                 try {
-                    val encodeValue = URLEncoder.encode(values, "UTF-8")
+                    val encodeValue = URLEncoder.encode(value, "UTF-8")
                     builder.append(key).append("=").append(encodeValue).append("&")
                 } catch (e: Exception) {
-                    //e.printStackTrace()
+                    //ignore
                 }
             }
             builder.deleteCharAt(builder.length - 1)
@@ -84,6 +89,8 @@ open class HiRequest {
         } else {
             cacheStrategyKey = endUrl
         }
+
         return cacheStrategyKey
     }
+
 }
