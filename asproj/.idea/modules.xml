@@ -2,7 +2,22 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/asproj.iml" filepath="$PROJECT_DIR$/.idea/modules/asproj.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ASProj.iml" filepath="$PROJECT_DIR$/.idea/modules/ASProj.iml" group="ASProj" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="ASProj/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/biz_detail/biz_detail.iml" filepath="$PROJECT_DIR$/.idea/modules/biz_detail/biz_detail.iml" group="ASProj/biz_detail" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/biz_home/biz_home.iml" filepath="$PROJECT_DIR$/.idea/modules/biz_home/biz_home.iml" group="ASProj/biz_home" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/biz_login/biz_login.iml" filepath="$PROJECT_DIR$/.idea/modules/biz_login/biz_login.iml" group="ASProj/biz_login" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/biz_order/biz_order.iml" filepath="$PROJECT_DIR$/.idea/modules/biz_order/biz_order.iml" group="ASProj/biz_order" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/biz_search/biz_search.iml" filepath="$PROJECT_DIR$/.idea/modules/biz_search/biz_search.iml" group="ASProj/biz_search" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/common.iml" filepath="$PROJECT_DIR$/.idea/modules/common/common.iml" group="ASProj/common" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-361166721/flutter_module.iml" filepath="$PROJECT_DIR$/.idea/modules/-361166721/flutter_module.iml" group="ASProj/flutter_module" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/hi-ability/hi-ability.iml" filepath="$PROJECT_DIR$/.idea/modules/hi-ability/hi-ability.iml" group="ASProj/hi-ability" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1701596020/hi-config.iml" filepath="$PROJECT_DIR$/.idea/modules/1701596020/hi-config.iml" group="ASProj/hi-config" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1645221642/hi-library.iml" filepath="$PROJECT_DIR$/.idea/modules/1645221642/hi-library.iml" group="ASProj/hi-library" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/437516724/hi-ui.iml" filepath="$PROJECT_DIR$/.idea/modules/437516724/hi-ui.iml" group="ASProj/hi-ui" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/hi_debugtool/hi_debugtool.iml" filepath="$PROJECT_DIR$/.idea/modules/hi_debugtool/hi_debugtool.iml" group="ASProj/hi_debugtool" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/pub_mod/pub_mod.iml" filepath="$PROJECT_DIR$/.idea/modules/pub_mod/pub_mod.iml" group="ASProj/pub_mod" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/service_login/service_login.iml" filepath="$PROJECT_DIR$/.idea/modules/service_login/service_login.iml" group="ASProj/service_login" />
     </modules>
   </component>
 </project>

@@ -1,5 +1,5 @@
 include ':hi-ability'
-include ':buildSrc'
+//include ':buildSrc'
 include ':biz_order'
 include ':biz_search'
 include ':service_login'
@@ -20,11 +20,11 @@ project(':hi-ui').projectDir = "../hi-ui/hiui" as File
 include ':common'
 
 //for flutter
-setBinding(new Binding([gradle: this]))                                 // new
-evaluate(new File(                                                      // new
-        settingsDir.parentFile,                                               // new
-        'flutter_module/.android/include_flutter.groovy'                          // new
-))
+//setBinding(new Binding([gradle: this]))                                 // new
+//evaluate(new File(                                                      // new
+//        settingsDir.parentFile,                                               // new
+//        'flutter_module/.android/include_flutter.groovy'                          // new
+//))
 
 //可选，主要作用是可以在当前AS的Project下显示flutter_module以方便查看和编写Dart代码
 include ':flutter_module'

@@ -72,7 +72,7 @@ dependencies {
     //arouter路由
     implementation dependency.arouter_api
     kapt dependency.arouter_compiler
-    implementation project(':flutter')
+//    implementation project(':flutter')
 
     api 'com.leon.channel:helper:2.0.3@aar'
 }

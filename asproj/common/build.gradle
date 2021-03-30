@@ -83,7 +83,7 @@ dependencies {
     //arouter
     implementation dependency.arouter_api
     kapt dependency.arouter_compiler
-    api project(':flutter')
+//    api project(':flutter')
 
     //rn
     if (enableHermes) {
