@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/biz_order/biz_order.iml" filepath="$PROJECT_DIR$/.idea/modules/biz_order/biz_order.iml" group="ASProj/biz_order" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/biz_search/biz_search.iml" filepath="$PROJECT_DIR$/.idea/modules/biz_search/biz_search.iml" group="ASProj/biz_search" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/common.iml" filepath="$PROJECT_DIR$/.idea/modules/common/common.iml" group="ASProj/common" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-465530338/flutter.iml" filepath="$PROJECT_DIR$/.idea/modules/-465530338/flutter.iml" group="ASProj/flutter" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/-361166721/flutter_module.iml" filepath="$PROJECT_DIR$/.idea/modules/-361166721/flutter_module.iml" group="ASProj/flutter_module" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/hi-ability/hi-ability.iml" filepath="$PROJECT_DIR$/.idea/modules/hi-ability/hi-ability.iml" group="ASProj/hi-ability" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/1701596020/hi-config.iml" filepath="$PROJECT_DIR$/.idea/modules/1701596020/hi-config.iml" group="ASProj/hi-config" />

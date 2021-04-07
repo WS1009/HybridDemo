@@ -154,16 +154,18 @@ class MethodParser(
             }
         }
 
-        require((httpMethod == HiRequest.METHOD.GET)
-                || (httpMethod == HiRequest.METHOD.POST
-                || (httpMethod == HiRequest.METHOD.PUT)
-                || (httpMethod == HiRequest.METHOD.DELETE))) {
+        require(
+            (httpMethod == HiRequest.METHOD.GET)
+                    || (httpMethod == HiRequest.METHOD.POST
+                    || (httpMethod == HiRequest.METHOD.PUT)
+                    || (httpMethod == HiRequest.METHOD.DELETE))
+        ) {
             String.format("method %s must has one of GET,POST,PUT,DELETE ", method.name)
         }
 
-            if (domainUrl == null) {
-                domainUrl = baseUrl
-            }
+        if (domainUrl == null) {
+            domainUrl = baseUrl
+        }
 
     }
 
@@ -193,6 +195,7 @@ class MethodParser(
         return true
     }
 
+    //判断参数是否是8种基本数据类型和string类型
     private fun isPrimitive(value: Any): Boolean {
         //String
         if (value.javaClass == String::class.java) {
