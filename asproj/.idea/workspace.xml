@@ -7,7 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d8cbb83-99fc-41bd-b822-afd5a7269c19" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../flutter_module/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,11 +142,11 @@
       <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state x="95" y="128" width="1240" height="621" key="DiffContextDialog/0.23.1440.822/-604.-1417.2560.1417@0.23.1440.822" timestamp="1617807073733" />
-    <state x="372" y="190" width="859" height="486" key="find.popup" timestamp="1617806522350">
-      <screen x="0" y="23" width="1440" height="821" />
+    <state x="372" y="190" width="866" height="487" key="find.popup" timestamp="1617808508316">
+      <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state x="372" y="190" width="859" height="486" key="find.popup/0.23.1440.821/-604.-1417.2560.1417@0.23.1440.821" timestamp="1617806522350" />
-    <state x="372" y="190" width="859" height="487" key="find.popup/0.23.1440.822/-604.-1417.2560.1417@0.23.1440.822" timestamp="1617716499917" />
+    <state x="372" y="190" width="866" height="487" key="find.popup/0.23.1440.822/-604.-1417.2560.1417@0.23.1440.822" timestamp="1617808508316" />
     <state width="600" height="424" key="javadoc.popup" timestamp="1617592931930">
       <screen x="0" y="23" width="1440" height="823" />
     </state>
