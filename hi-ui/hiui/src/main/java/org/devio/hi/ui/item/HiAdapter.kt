@@ -1,6 +1,7 @@
 package org.devio.hi.ui.item
 
 import android.content.Context
+import android.content.res.TypedArray
 import android.util.SparseArray
 import android.util.SparseIntArray
 import android.view.LayoutInflater
@@ -26,7 +27,7 @@ class HiAdapter(context: Context) : Adapter<ViewHolder>() {
     private var mInflater = LayoutInflater.from(context)
     private var dataSets = java.util.ArrayList<HiDataItem<*, out ViewHolder>>()
 
-    //private var typeArrays = SparseArray<HiDataItem<*, out ViewHolder>>()
+    private var typeArrays = SparseArray<HiDataItem<*, out ViewHolder>>()
     private val typePositions = SparseIntArray();
 
     private var headers = SparseArray<View>()
@@ -183,6 +184,8 @@ class HiAdapter(context: Context) : Adapter<ViewHolder>() {
 
         //这会导致不同position，但viewType相同，获取到的dataItem始终是第一次关联的dataItem对象。
         //这就会导致通过getItemView创建的成员变量，只在第一个dataItem中，其它实例中无法生效
+//        val dataItem = typeArrays.get(viewType)
+//        var view:View?=dataItem.getItemView(parent)
 
         //为了解决dataItem成员变量binding, 刷新之后无法被复用的问题
         val position = typePositions.get(viewType)

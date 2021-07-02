@@ -9,6 +9,7 @@
     <list default="true" id="3d8cbb83-99fc-41bd-b822-afd5a7269c19" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -142,20 +143,26 @@
       <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state x="95" y="128" width="1240" height="621" key="DiffContextDialog/0.23.1440.822/-604.-1417.2560.1417@0.23.1440.822" timestamp="1617807073733" />
+    <state x="221" y="89" key="SettingsEditor" timestamp="1621261296898">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="221" y="89" key="SettingsEditor/0.0.1440.900/-523.-1440.2560.1440@0.0.1440.900" timestamp="1621261296898" />
     <state x="372" y="190" width="866" height="487" key="find.popup" timestamp="1617808508316">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state x="372" y="190" width="859" height="486" key="find.popup/0.23.1440.821/-604.-1417.2560.1417@0.23.1440.821" timestamp="1617806522350" />
     <state x="372" y="190" width="866" height="487" key="find.popup/0.23.1440.822/-604.-1417.2560.1417@0.23.1440.822" timestamp="1617808508316" />
-    <state width="600" height="424" key="javadoc.popup" timestamp="1617592931930">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state width="900" height="469" key="javadoc.popup" timestamp="1621437750942">
+      <screen x="0" y="23" width="1440" height="822" />
     </state>
+    <state width="900" height="469" key="javadoc.popup/0.23.1440.822/-523.-1417.2560.1417@0.23.1440.822" timestamp="1621437750942" />
     <state width="600" height="424" key="javadoc.popup/0.23.1440.823/-604.-1417.2560.1417@0.23.1440.823" timestamp="1617592931930" />
-    <state x="385" y="168" width="670" height="678" key="search.everywhere.popup" timestamp="1617592909618">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state x="145" y="168" width="910" height="678" key="search.everywhere.popup" timestamp="1621525665181">
+      <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state x="385" y="168" width="670" height="676" key="search.everywhere.popup/0.23.1440.821/-282.-1417.2560.1417@0.23.1440.821" timestamp="1617203061532" />
     <state x="385" y="168" width="670" height="676" key="search.everywhere.popup/0.23.1440.821/-604.-1417.2560.1417@0.23.1440.821" timestamp="1617205950594" />
+    <state x="145" y="168" width="910" height="678" key="search.everywhere.popup/0.23.1440.822/-523.-1417.2560.1417@0.23.1440.822" timestamp="1621525665181" />
     <state x="385" y="168" width="670" height="678" key="search.everywhere.popup/0.23.1440.823/-604.-1417.2560.1417@0.23.1440.823" timestamp="1617592909618" />
   </component>
 </project>
