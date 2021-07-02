@@ -1,7 +1,6 @@
 package org.devio.hi.ui.item
 
 import android.content.Context
-import android.content.res.TypedArray
 import android.util.SparseArray
 import android.util.SparseIntArray
 import android.view.LayoutInflater
@@ -13,7 +12,6 @@ import androidx.recyclerview.widget.RecyclerView.*
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import java.lang.ref.WeakReference
 import java.lang.reflect.ParameterizedType
-import java.lang.reflect.Type
 
 /**
  * 通用数据适配器
