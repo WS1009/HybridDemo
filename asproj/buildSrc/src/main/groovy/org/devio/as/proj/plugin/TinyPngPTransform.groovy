@@ -75,9 +75,10 @@ class TinyPngPTransform extends Transform {
 
             input.directoryInputs.each { dirInput ->
                 println("dirInput abs file path:" + dirInput.file.absolutePath)
+                //遍历处理每一个文件夹下面的文件
                 handleDirectory(dirInput.file)
 
-                //把input->dir->class-->dest目标目录下去。
+                //把input->dir->class-->dest目标目录下去。将输入所有目录复制到output指定目录
                 def dest = outputProvider.getContentLocation(dirInput.name, dirInput.contentTypes, dirInput.scopes, Format.DIRECTORY)
                 FileUtils.copyDirectory(dirInput.file, dest)
             }
@@ -114,8 +115,8 @@ class TinyPngPTransform extends Transform {
                 if (shouldModifyClass(filePath)) {
                     def inputStream = new FileInputStream(file)
                     def ctClass = modifyClass(inputStream)
-                    ctClass.writeFile(dir.name)
-                    ctClass.detach()
+                    ctClass.writeFile(file.name)
+                    ctClass.detach()//将ctClass从classPool中释放掉，避免常驻内存
                 }
             }
         }
@@ -128,6 +129,7 @@ class TinyPngPTransform extends Transform {
         def inputJarFile = new JarFile(jarFile)
         def enumeration = inputJarFile.entries()
 
+        //jar包里面的class修改之后，不能原路写入jar，会破坏jar的文件结构，需要单独写入一个jar中
         def outputJarFile = new File(jarFile.parentFile, "temp_" + jarFile.name)
         if (outputJarFile.exists()) outputJarFile.delete()
         def jarOutputStream = new JarOutputStream(new BufferedOutputStream(new FileOutputStream(outputJarFile)))
@@ -135,6 +137,7 @@ class TinyPngPTransform extends Transform {
             def inputJarEntry = enumeration.nextElement()
             def inputJarEntryName = inputJarEntry.name
 
+            //构建一个个需要写入的JarEntry,并添加到jar包
             def outputJarEntry = new JarEntry(inputJarEntryName)
             jarOutputStream.putNextEntry(outputJarEntry)
             //com/leon/channel/helper/BuildConfig.class
@@ -142,6 +145,7 @@ class TinyPngPTransform extends Transform {
 
             def inputStream = inputJarFile.getInputStream(inputJarEntry)
             if (!shouldModifyClass2(inputJarEntryName)) {
+                //如果这个类不需要修改，那也需要想output jar写入数据，否则class文件会丢失
                 jarOutputStream.write(IOUtils.toByteArray(inputStream))
                 inputStream.close()
                 continue
@@ -244,10 +248,11 @@ class TinyPngPTransform extends Transform {
         return filePath.contains("androidx/appcompat/widget/AppCompatImageView")
     }
 
+    //检验文件路径以判断是否需要对其进行修改
     boolean shouldModifyClass(String filePath) {
         return (filePath.contains("org/devio/as/proj")
                 && filePath.endsWith("Activity.class")
-                && !filePath.contains("R.class")
+                && !filePath.contains("R.class")//以下为通用的屏蔽文件，不需要处理
                 && !filePath.contains('$')
                 && !filePath.contains('R$')
                 && !filePath.contains("BuildConfig.class"))
