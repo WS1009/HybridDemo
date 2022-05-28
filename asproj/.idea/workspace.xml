@@ -11,19 +11,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d8cbb83-99fc-41bd-b822-afd5a7269c19" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/cache/CacheDao_Impl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/cache/CacheDatabase_Impl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc1/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc1/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc1/src/main/groovy/org/devio/as/proj/plugin/LargeBitmapChecker.groovy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc1/src/main/groovy/org/devio/as/proj/plugin/TinyPngPTransform.groovy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc1/src/main/groovy/org/devio/as/proj/plugin/TinyPngPlugin.groovy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc1/src/main/resources/META-INF/gradle-plugins/tinypng.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/common/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/cache/CacheDao_Impl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/cache/CacheDao_Impl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/cache/CacheDatabase_Impl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/cache/CacheDatabase_Impl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/executor/HiExecutor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../hi-library/hilibrary/src/main/java/org/devio/hi/library/executor/HiExecutor.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +131,7 @@
     <property name="project.structure.last.edited" value="SDK Location" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.3426396" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="leetcode.id" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -238,10 +231,22 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="245" y="189" key="#PSD" timestamp="1648003044108">
+    <state x="482" y="120" key="#Custom_Plugin_Repositories" timestamp="1653119803002">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="245" y="189" key="#PSD/0.0.1440.900@0.0.1440.900" timestamp="1648003044108" />
+    <state x="482" y="120" key="#Custom_Plugin_Repositories/0.0.1440.900@0.0.1440.900" timestamp="1653119803002" />
+    <state x="319" y="115" key="#HTTP_Proxy" timestamp="1653119770259">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="319" y="115" key="#HTTP_Proxy/0.0.1440.900@0.0.1440.900" timestamp="1653119770259" />
+    <state x="320" y="115" key="#Notifications" timestamp="1653120411848">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="115" key="#Notifications/0.0.1440.900@0.0.1440.900" timestamp="1653120411848" />
+    <state x="245" y="189" key="#PSD" timestamp="1653101269691">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="245" y="189" key="#PSD/0.0.1440.900@0.0.1440.900" timestamp="1653101269691" />
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1650955896615">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -250,28 +255,26 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="393" y="168" key="RollbackChangesDialog/0.0.1440.900@0.0.1440.900" timestamp="1651501016836" />
-    <state x="221" y="89" key="SettingsEditor" timestamp="1650612930560">
+    <state x="221" y="89" key="SettingsEditor" timestamp="1653120536150">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1650612930560" />
-    <state width="537" height="476" key="SwitcherDM" timestamp="1651500128017">
+    <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1653120536150" />
+    <state width="537" height="476" key="SwitcherDM" timestamp="1653019272347">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="537" height="476" key="SwitcherDM/0.0.1440.900@0.0.1440.900" timestamp="1651500128017" />
-    <state x="483" y="288" width="957" height="486" key="find.popup" timestamp="1651035909979">
+    <state width="537" height="476" key="SwitcherDM/0.0.1440.900@0.0.1440.900" timestamp="1653019272347" />
+    <state x="483" y="288" width="957" height="486" key="find.popup" timestamp="1653560849834">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="588" y="288" width="852" height="486" key="find.popup/0.0.1440.900/0.-1440.2560.1440@0.0.1440.900" timestamp="1644664240746" />
-    <state x="483" y="288" width="957" height="486" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1651035909979" />
-    <state x="1085" y="-963" width="881" height="486" key="find.popup/0.23.1440.822/0.-1417.2560.1417@0.-1417.2560.1417" timestamp="1642837646950" />
-    <state width="600" height="424" key="javadoc.popup" timestamp="1650853500560">
+    <state x="483" y="288" width="957" height="486" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1653560849834" />
+    <state width="600" height="424" key="javadoc.popup" timestamp="1653114860945">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="600" height="424" key="javadoc.popup/0.0.1440.900@0.0.1440.900" timestamp="1650853500560" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1651131326948">
-      <screen x="0" y="23" width="1440" height="821" />
+    <state width="600" height="424" key="javadoc.popup/0.0.1440.900@0.0.1440.900" timestamp="1653114860945" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1653114462097">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1650856566746" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1653114462097" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.23.1440.816@0.23.1440.816" timestamp="1650980963211" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.23.1440.821@0.23.1440.821" timestamp="1651131326948" />
   </component>
