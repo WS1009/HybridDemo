@@ -69,8 +69,14 @@ object HiExecutor {
         }
     }
 
+    @JvmOverloads
     fun execute(@IntRange(from = 0, to = 10) priority: Int = 0, runnable: Runnable) {
         hiExecutor.execute(PriorityRunnable(priority, runnable))
+    }
+
+    @JvmOverloads
+    fun execute(@IntRange(from = 0, to = 10) priority: Int = 0, callable: Callable<*>) {
+        hiExecutor.execute(PriorityRunnable(priority, callable))
     }
 
     abstract class Callable<T> : Runnable {
@@ -105,6 +111,7 @@ object HiExecutor {
     }
 
 
+    //@Synchronized
     fun pause() {
         lock.lock()
         try {
@@ -115,6 +122,7 @@ object HiExecutor {
         }
     }
 
+    //@Synchronized
     fun resume() {
         lock.lock()
         try {
